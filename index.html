@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--Subida de archivos-->
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mind Ease</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
+</head>
+
+<body>
+  <header>
+    <img src="img/logo.png" alt="Mind Ease Logo">
+    <h1>Mind Ease</h1>
+    <p class="bienvenida">Tu espacio seguro para calmar la mente y el alma.</p>
+  </header>
+
+  <section class="frase-mensaje">
+    <button id="mensajeAleatorioBtn">Haz clic para recibir un mensaje 💬</button>
+    <p id="mensajeAleatorioTexto"></p>
+  </section>
+
+  <section class="contenedor">
+    <div class="contenido">
+      <img src="img/portada.jpg" alt="Relajación" class="imagen portada">
+      <div class="texto">
+        <h2>¿Qué es Mind Ease?</h2>
+        <p>Una plataforma de apoyo emocional que combina inteligencia artificial y acompañamiento humano para ayudarte a encontrar paz y bienestar. Pensada para ti, que buscas alivio, guía y contención emocional real.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contenedor claro">
+    <h2>Bienestar Gratuito</h2>
+    <div class="contenido">
+      <img src="img/relajacion.jpg" alt="Ejercicio de relajación" class="imagen">
+      <div class="texto">
+        <ul>
+          <li>Chat IA disponible 24/7 para contención emocional</li>
+          <li>Ejercicios de respiración y relajación guiados</li>
+          <li>Tests y autoevaluaciones para entender tus emociones</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="contenedor">
+    <h2>Soporte Premium</h2>
+    <div class="contenido">
+      <img src="img/profesionales.jpg" alt="Profesionales" class="imagen">
+      <div class="texto">
+        <ul>
+          <li>Sesiones individuales con profesionales</li>
+          <li>Grupos de apoyo semanales</li>
+          <li>Acompañamiento espiritual y emocional</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="contenedor claro">
+    <h2>Agenda tu valoración gratuita</h2>
+    <p>Conecta con un profesional y comienza tu proceso con una primera sesión sin costo. 💬</p>
+    <button onclick="alert('¡Gracias por tu interés! Te contactaremos pronto.')">Solicitar sesión</button>
+  </section>
+
+  <div id="popupIA" class="popup">
+    <label for="estadoEmocional">¿Cómo te sientes hoy?</label>
+    <select id="estadoEmocional" onchange="mostrarMensajeIA()">
+      <option value="">Selecciona una opción</option>
+      <option value="triste">Triste</option>
+      <option value="estresado">Estresado</option>
+      <option value="solo">Solo</option>
+      <option value="agotado">Agotado</option>
+      <option value="ansioso">Ansioso</option>
+      <option value="desmotivado">Desmotivado</option>
+    </select>
+    <p id="mensajeIA"></p>
+  </div>
+
+  <button class="boton-flotante" onclick="abrirPopupIA()">¿Cómo te sientes?</button>
+
+  <footer>
+    <p>&copy; 2025 Mind Ease. Con amor para tu bienestar.</p>
+  </footer>
+</body>
+
+</html>
